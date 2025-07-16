@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/title_note_detail"
+        android:titleTextColor="@color/onPrimary"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/onBackground"
+            android:paddingBottom="12dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/onSurface"
+            android:paddingBottom="18dp"
+            android:minHeight="72dp"
+            />
+
+        <TextView
+            android:id="@+id/createdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/secondaryColor"
+            android:paddingTop="12dp"
+            />
+        <TextView
+            android:id="@+id/updatedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/secondaryColor"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="36dp">
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_edit"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_delete"
+                android:layout_marginStart="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,7 +1,18 @@
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">#6200EE</item>
-        <item name="colorPrimaryDark">#3700B3</item>
-        <item name="colorAccent">#03DAC5</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Minimalistic, light theme -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColorPrimary">@color/onBackground</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <!-- Flat, minimal look -->
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>

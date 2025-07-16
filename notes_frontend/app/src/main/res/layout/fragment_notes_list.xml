@@ -1,5 +1,5 @@
 <!--
 NOTE: replaced in previous steps, here is required for build.gradle/data binding usage: layout root element
-Android Studio will automatically generate binding classes. 
+Android Studio will automatically generate binding classes.
 If data binding is not enabled, this comment can be ignored.
 -->
